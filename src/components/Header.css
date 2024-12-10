@@ -1,0 +1,36 @@
+.headbar {
+    background-color: #333; /* Couleur de fond */
+    padding: 1rem 2rem; /* Espacement interne */
+    display: flex; /* Active Flexbox */
+    justify-content: space-between; /* Répartit les éléments sur toute la largeur */
+    align-items: center; /* Aligne verticalement les éléments */
+    color: white; /* Texte blanc */
+  }
+  
+  .headbar nav ul {
+    list-style: none; /* Supprime les puces */
+    display: flex; /* Dispose les éléments en ligne */
+    gap: 2rem; /* Espace entre les liens */
+    margin: 0; /* Supprime les marges par défaut */
+    padding: 0; /* Supprime le padding */
+  }
+  
+  .headbar nav ul li {
+    margin: 0; /* Pas de marge */
+  }
+  
+  .headbar nav ul li a {
+    text-decoration: none; /* Supprime le soulignement */
+    color: white; /* Couleur du texte */
+    font-size: 1.2rem; /* Taille du texte */
+    transition: color 0.3s ease; /* Animation douce pour le survol */
+  }
+  
+  .headbar nav ul li a:hover {
+    color: #61dafb; /* Change la couleur au survol */
+  }
+  
+  .headbar nav ul li a.active {
+    font-weight: bold; /* Gras pour le lien actif */
+    border-bottom: 2px solid #61dafb; /* Ajoute une bordure sous le lien actif */
+  }
