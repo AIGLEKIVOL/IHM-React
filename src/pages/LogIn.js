@@ -6,12 +6,21 @@ function Login({ onLogin }) {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
-  const navigate = useNavigate();
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
 
+  const navigate = useNavigate();
+  const handleLogin = (username, password) => {
+    // Simuler une authentification (à remplacer par une API réelle)
+    if (username  && password ) {
+      setIsAuthenticated(true);
+      return true;
+    }
+    return false;
+  };
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (onLogin(username, password)) {
-      navigate('/'); // Redirige vers Home après connexion
+    if (handleLogin(username, password)) {
+      navigate('/Profile'); // Redirige vers Home après connexion
     } else {
       setError('Invalid username or password');
     }

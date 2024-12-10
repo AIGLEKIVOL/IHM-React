@@ -1,4 +1,4 @@
-.talents-page {
+.job-offers-page {
     display: flex;
     flex-direction: column;
     padding: 2rem;
@@ -30,32 +30,29 @@
     width: 100%;
   }
   
-  .filter-item input[type="number"] {
-    width: 80px; /* Ajuster la largeur pour les inputs numériques */
-  }
-  
   .filter-item input[type="checkbox"] {
     margin-right: 0.5rem;
-    align-self: center; /* Aligne la case à cocher avec le texte */
   }
+  
   .filter-item div {
     display: flex;
-    flex-wrap: wrap; /* Permet aux éléments de se mettre sur plusieurs lignes si nécessaire */
+    flex-wrap: wrap;
     align-items: center;
   }
   
   .filter-item div label {
     margin-right: 1rem;
     display: flex;
-    align-items: center; /* Aligne la case à cocher avec le texte */
+    align-items: center;
   }
-  .profiles-list {
+  
+  .job-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
   }
   
-  .profile-card {
+  .job-card {
     padding: 1rem;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -63,19 +60,19 @@
     background-color: white;
   }
   
-  .profile-card h4 {
+  .job-card h4 {
     margin-top: 0;
   }
   
-  .profile-card p {
+  .job-card p {
     margin: 0.5rem 0;
   }
   
-  .profile-card p:last-child {
+  .job-card p:last-child {
     margin-bottom: 0;
   }
   
-  .profile-card button {
+  .job-card button {
     padding: 0.5rem;
     background-color: #4caf50;
     color: white;
@@ -84,7 +81,7 @@
     cursor: pointer;
   }
   
-  .profile-card button:hover {
+  .job-card button:hover {
     background-color: #45a049;
   }
   

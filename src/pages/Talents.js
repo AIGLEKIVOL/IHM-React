@@ -99,20 +99,22 @@ function Talents() {
         </div>
 
         <div className="filter-item">
-          <label>Tags</label>
-          {['data analyst', 'machine learning', 'web developer', 'cybersecurity'].map((tag) => (
-            <label key={tag}>
-              <input
-                type="checkbox"
-                value={tag}
-                checked={tagsFilter.includes(tag)}
-                onChange={handleTagChange}
-              />
-              {tag}
-            </label>
-          ))}
+          <label>TAGS</label>
+          <div>
+            {['data analyst', 'machine learning', 'web developer', 'cybersecurity'].map((tag) => (
+                <label key={tag}>
+                <input
+                    type="checkbox"
+                    value={tag}
+                    checked={tagsFilter.includes(tag)}
+                    onChange={handleTagChange}
+                />
+                {tag}
+                </label>
+            ))}
+            </div>
         </div>
-      </div>
+    </div>
 
       <div className="profiles-list">
         <h3>Profils</h3>

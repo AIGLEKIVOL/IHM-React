@@ -8,7 +8,7 @@ function Headbar() {
         <ul>
           <li>
             <NavLink to="/" className={({ isActive }) => (isActive ? 'active' : '')}>
-              Home
+              Login
             </NavLink>
           </li>
           <li>
