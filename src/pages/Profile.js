@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Profile.css';
 import profileImg from './img/salameche.JPG'; // Import de l'image
+import Popup from './Popup';
 
 
 function Profile() {
@@ -18,7 +19,12 @@ function Profile() {
   const [newTag, setNewTag] = useState('');
   const [newProject, setNewProject] = useState('');
   const [profilePhoto, setProfilePhoto] = useState(profileImg);
+  const [portfolio, setPortfolio] = useState([]);
+  const [isPopupVisible, setPopupVisible] = useState(false);
 
+  const handleAddInstance = (instance) => {
+    setPortfolio([...portfolio, instance]);
+  };
 
   const handleInputChange = (field, value) => {
     setProfileData((prevData) => ({
@@ -133,21 +139,24 @@ function Profile() {
 
       <div className="portfolio-section">
         <h3>Portfolio</h3>
-        <div className="portfolio-list">
-          {profileData.portfolio.map((project, index) => (
-            <div key={index} className="portfolio-item">
-              {project}
-            </div>
+        <button onClick={() => setPopupVisible(true)}>+ Ajouter une instance</button>
+        <ul>
+          {portfolio.map((instance, index) => (
+            <li key={index}>
+              <p><strong>Date :</strong> {instance.date}</p>
+              <p><strong>Description :</strong> {instance.description}</p>
+              <p><strong>Langage :</strong> {instance.language}</p>
+              <p><strong>Durée :</strong> {instance.duration} jours</p>
+            </li>
           ))}
-        </div>
-        <input
-          type="text"
-          value={newProject}
-          onChange={(e) => setNewProject(e.target.value)}
-          placeholder="Add a new project"
-        />
-        <button onClick={handleAddProject}>+ Add an Instance</button>
+        </ul>
       </div>
+      {isPopupVisible && (
+        <Popup
+          onClose={() => setPopupVisible(false)}
+          onSave={handleAddInstance}
+        />
+      )}
     </div>
   );
 }
