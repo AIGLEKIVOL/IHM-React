@@ -99,7 +99,7 @@ function Talents() {
         </div>
 
         <div className="filter-item">
-          <label>TAGS</label>
+          <label>Filtres</label>
           <div>
             {['data analyst', 'machine learning', 'web developer', 'cybersecurity'].map((tag) => (
                 <label key={tag}>

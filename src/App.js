@@ -1,7 +1,6 @@
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import React, { useState } from 'react';
 import Headbar from './components/Header';
-import Home from './pages/Home';
 import JobOffers from './pages/JobOffers';
 import Talents from './pages/Talents';
 import Profile from './pages/Profile';

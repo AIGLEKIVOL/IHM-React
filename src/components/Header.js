@@ -8,12 +8,12 @@ function Headbar() {
         <ul>
           <li>
             <NavLink to="/" className={({ isActive }) => (isActive ? 'active' : '')}>
-              Login
+              Connexion
             </NavLink>
           </li>
           <li>
             <NavLink to="/joboffers" className={({ isActive }) => (isActive ? 'active' : '')}>
-              Job Offers
+              Offres d'emploi
             </NavLink>
           </li>
           <li>
@@ -23,7 +23,7 @@ function Headbar() {
           </li>
           <li>
             <NavLink to="/profile" className={({ isActive }) => (isActive ? 'active' : '')}>
-              Profile
+              Profil
             </NavLink>
           </li>
         </ul>

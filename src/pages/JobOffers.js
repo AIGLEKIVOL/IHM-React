@@ -6,28 +6,28 @@ const jobOffers = [
   {
     id: 1,
     title: 'Data Analyst Mission',
-    salary: 50,
+    salary: 15,
     duration: 30, // Durée en jours
     tags: ['data analyst', 'machine learning'],
   },
   {
     id: 2,
     title: 'Web Developer Project',
-    salary: 60,
+    salary: 15,
     duration: 60,
     tags: ['web developer', 'cybersecurity'],
   },
   {
     id: 3,
     title: 'Cybersecurity Specialist',
-    salary: 80,
+    salary: 25,
     duration: 45,
     tags: ['cybersecurity'],
   },
   {
     id: 4,
     title: 'Machine Learning Engineer',
-    salary: 70,
+    salary: 20,
     duration: 40,
     tags: ['machine learning', 'data analyst'],
   },
@@ -64,7 +64,7 @@ function JobOffers() {
   };
 
   const filteredJobs = jobOffers.filter((job) => {
-    const salaryMatches = !salaryFilter || job.salary <= salaryFilter;
+    const salaryMatches = !salaryFilter || job.salary >= salaryFilter;
     const durationMatches = !durationFilter || job.duration <= durationFilter;
     const tagsMatch =
       tagsFilter.length === 0 || tagsFilter.every((tag) => job.tags.includes(tag));
@@ -77,7 +77,7 @@ function JobOffers() {
       {/* Filtres */}
       <div className="filters-bar">
         <div className="filter-item">
-          <label>Montant de la mission Max</label>
+          <label>Montant de la mission min (par heure)</label>
           <input
             type="number"
             value={salaryFilter}
@@ -87,7 +87,7 @@ function JobOffers() {
         </div>
 
         <div className="filter-item">
-          <label>Durée Max (en jours)</label>
+          <label>Durée max (en jours)</label>
           <input
             type="number"
             value={durationFilter}
@@ -97,7 +97,7 @@ function JobOffers() {
         </div>
 
         <div className="filter-item">
-          <label>TAGS</label>
+          <label>Filtres</label>
           <div>
           {['data analyst', 'machine learning', 'web developer', 'cybersecurity'].map((tag) => (
             <label key={tag}>
@@ -120,8 +120,8 @@ function JobOffers() {
           filteredJobs.map((job) => (
             <div key={job.id} className="profile-card">
               <h4>{job.title}</h4>
-              <p>Salaire: ${job.salary}/jour</p>
-              <p>Durée: {job.duration} jours</p>
+              <p>Salaire: ${job.salary}/heure</p>
+              <p>Durée estimée: {job.duration} jours</p>
               <p>Tags: {job.tags.join(', ')}</p>
               <button onClick={() => handleJobClick(job)}>Contacter l'employeur</button>
             </div>

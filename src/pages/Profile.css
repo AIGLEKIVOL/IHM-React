@@ -9,6 +9,22 @@
     display: flex;
     justify-content: space-between;
   }
+  .profile-names {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espace entre les champs */
+    margin-left: 15px; /* Décalage par rapport à la photo */
+  }
+  
+  .name-input {
+    width: 100%; /* Champs prennent toute la largeur */
+    max-width: 300px; /* Largeur maximale */
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
   
   .profile-photo {
     display: flex;
@@ -103,4 +119,95 @@
   .profile-numeric-fields input:focus {
     border-color: #61dafb;
     outline: none;
+  }
+
+  .portfolio-section button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative; /* Nécessaire pour positionner l'info-bulle */
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .portfolio-section button:hover {
+    background-color: #45a049; /* Changement de couleur au survol */
+    transform: scale(1.05); /* Légère mise en avant */
+  }
+  
+  /* Info-bulle (tooltip) */
+  .portfolio-section button:hover::after {
+    content: "Permet l'ajout d'une nouvelle ligne à votre portfolio";
+    position: absolute;
+    bottom: -35px; /* Ajuster selon la taille du bouton */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    white-space: nowrap; /* Évite les retours à la ligne */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s;
+  }
+  
+  .portfolio-section button:hover::after {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .profile-tags button {
+    margin-top: 10px;
+    background-color: #007bff; /* Bleu standard */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s, transform 0.2s;
+    position: relative; /* Nécessaire pour positionner l'info-bulle */
+  }
+  
+  .profile-tags button:hover {
+    background-color: #0056b3; /* Couleur légèrement plus foncée */
+    transform: scale(1.05); /* Légère mise en avant */
+  }
+  
+  /* Info-bulle */
+  .profile-tags button:hover::after {
+    content: "Décrit vos compétences ou intérêts";
+    position: absolute;
+    bottom: -35px; /* Ajustez pour placer l'info-bulle en dessous du bouton */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    white-space: nowrap; /* Évite les retours à la ligne */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s;
+  }
+  
+  .profile-tags button:hover::after {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .profile-tags input[type="text"] {
+    width: 100%; /* Prend toute la largeur disponible */
+    padding: 10px; /* Espacement intérieur pour plus de confort */
+    margin-top: 10px; /* Un peu d'espace au-dessus */
+    font-size: 16px; /* Police légèrement plus grande */
+    border: 1px solid #ccc; /* Bordure grise */
+    border-radius: 4px; /* Angles arrondis */
+    box-sizing: border-box; /* Inclut le padding dans la largeur totale */
   }

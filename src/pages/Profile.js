@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './Profile.css';
 import profileImg from './img/salameche.JPG'; // Import de l'image
 import Popup from './Popup';
+import './Popup.css';
 
 
 function Profile() {
@@ -73,6 +74,22 @@ function Profile() {
             onChange={handlePhotoChange}
           />
         </div>
+        <div className="profile-names">
+          <input
+            type="text"
+            value={profileData.firstName}
+            onChange={(e) => setProfileData({ ...profileData, firstName: e.target.value })}
+            placeholder="Prénom"
+            className="name-input"
+          />
+          <input
+            type="text"
+            value={profileData.lastName}
+            onChange={(e) => setProfileData({ ...profileData, lastName: e.target.value })}
+            placeholder="Nom"
+            className="name-input"
+          />
+        </div>
         <div className="profile-tags">
           <h3>Tags</h3>
           <div className="tags-container">
@@ -86,52 +103,52 @@ function Profile() {
             type="text"
             value={newTag}
             onChange={(e) => setNewTag(e.target.value)}
-            placeholder="Add a tag"
+            placeholder="Web dev, data analyst"
           />
-          <button onClick={handleAddTag}>Add Tag</button>
+          <button className="add-tag-button" onClick={handleAddTag}>Ajout d'un tag</button>
         </div>
       </div>
 
       <div className="profile-info">
         <div className="profile-text-fields">
           <textarea
-            placeholder="Profile Description"
+            placeholder="Description : Développeur passionné avec plus de 5 ans d'expérience dans la création d'applications web et mobiles."
             value={profileData.description}
             onChange={(e) => handleInputChange('description', e.target.value)}
           />
           <textarea
-            placeholder="Curriculum"
+            placeholder="Curriculum : Master en Informatique, Université de Paris, 2018. Formation en Machine Learning et en Développement Web."
             value={profileData.curriculum}
             onChange={(e) => handleInputChange('curriculum', e.target.value)}
           />
           <textarea
-            placeholder="Experiences"
+            placeholder="Expériences : 1. Développeur Frontend chez TechCorp (2019-2021)\n2. Ingénieur Logiciel chez Innovatech (2021-2023)"
             value={profileData.experiences}
             onChange={(e) => handleInputChange('experiences', e.target.value)}
           />
           <textarea
-            placeholder="Qualifications"
+            placeholder="Langages utilisés : React.js, Node.js, Python, Django, SQL, et AWS."
             value={profileData.qualifications}
             onChange={(e) => handleInputChange('qualifications', e.target.value)}
           />
         </div>
         <div className="profile-numeric-fields">
         <label>
-            Jobs Done:
+            Nombre de missions effectuées:
             <input
             type="number"
             value={profileData.jobsDone}
             onChange={(e) => handleInputChange('jobsDone', e.target.value)}
-            placeholder="Enter a number"
+            placeholder="Entrer un nombre"
             />
         </label>
         <label>
-            Hours Worked:
+            Nombre d'heures réalisées:
             <input
             type="number"
             value={profileData.hoursWorked}
             onChange={(e) => handleInputChange('hoursWorked', e.target.value)}
-            placeholder="Enter a number"
+            placeholder="Entrer un nombre"
             />
         </label>
         </div>
@@ -139,7 +156,7 @@ function Profile() {
 
       <div className="portfolio-section">
         <h3>Portfolio</h3>
-        <button onClick={() => setPopupVisible(true)}>+ Ajouter une instance</button>
+        <button onClick={() => setPopupVisible(true)}>+ Ajouter une mission/projet</button>
         <ul>
           {portfolio.map((instance, index) => (
             <li key={index}>
