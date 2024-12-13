@@ -6,7 +6,7 @@ De la même manière, du point de vue des recruteurs, la sélection de personnel
 Modèles de personas type
 
 
-Christelle : DRH en entreprise (Recruteur ponctuel) 
+#Christelle : DRH en entreprise (Recruteur ponctuel) 
 
 Âge = 35-50 ans
 Profession = directrice des ressources humaines
@@ -25,7 +25,7 @@ Accéder à une recherche catégorisée (par type de mission).
 Visualiser des profils avec des informations claires et synthétiques : tarifications horaires & indicateurs de performance. 
 Disposer d’une présentation succincte des projets réalisés.
 
-Mathilde - Jeune diplômée en data analyse (Chercheuse d’emploi)
+#Mathilde - Jeune diplômée en data analyse (Chercheuse d’emploi)
 
 Âge : 22-28 ans
 Profession : Stagiaire en data analysis, cherche à étoffer son portfolio professionnel. 
@@ -44,7 +44,7 @@ Un espace portfolio structuré et attractif pour présenter : projets réalisés
 Opportunités de missions adaptées à son niveau d’expérience (missions pour débutants ou petits projets).
 Feedback constructif ou recommandations des recruteurs après les missions.
 
-Michael - Entrepreneur en croissance (Employeur régulier)
+#Michael - Entrepreneur en croissance (Employeur régulier)
 
 Âge : 30-45 ans
 Profession : créateur de start-up dans le domaine comptable.
