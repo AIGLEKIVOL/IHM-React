@@ -5,6 +5,7 @@ import JobOffers from './pages/JobOffers';
 import Talents from './pages/Talents';
 import Profile from './pages/Profile';
 import Login from './pages/LogIn';
+import JobPost from './pages/JobPost';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Route path="/joboffers" element={<JobOffers />} />
         <Route path="/talents" element={<Talents />} />
         <Route path="/profile" element={<Profile />} />
+        <Route path="/jobpost" element={<JobPost />} />
       </Routes>
     </Router>
   );

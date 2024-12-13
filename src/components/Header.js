@@ -26,6 +26,11 @@ function Headbar() {
               Profil
             </NavLink>
           </li>
+          <li>
+            <NavLink to="/jobpost" className={({ isActive }) => (isActive ? 'active' : '')}>
+              Poster une annonce
+            </NavLink>
+          </li>
         </ul>
       </nav>
     </header>
