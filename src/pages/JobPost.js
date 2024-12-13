@@ -8,9 +8,11 @@ function JobPost() {
     hourlyRate: '',
     tags: [],
     experienceLevel: '',
+    duration: 1,
   });
 
   const [newTag, setNewTag] = useState('');
+  const [selectedImage, setSelectedImage] = useState(null);
 
   const handleInputChange = (field, value) => {
     setJobData((prevData) => ({
@@ -26,6 +28,17 @@ function JobPost() {
         tags: [...prevData.tags, newTag.trim()],
       }));
       setNewTag('');
+    }
+  };
+
+  const handleImageChange = (event) => {
+    const file = event.target.files[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onload = (e) => {
+        setSelectedImage(e.target.result);
+      };
+      reader.readAsDataURL(file);
     }
   };
 
@@ -62,6 +75,17 @@ function JobPost() {
             value={jobData.description}
             onChange={(e) => handleInputChange('description', e.target.value)}
             placeholder="Décrivez les détails de la mission (contexte, exigences, compétences requises, durée, etc.)"
+          />
+        </div>
+              {/* Durée de la mission */}
+              <div className="form-group">
+          <label htmlFor="duration">Durée de la mission (en mois) :</label>
+          <input
+            type="number"
+            id="duration"
+            value={jobData.duration}
+            onChange={(e) => handleInputChange('duration', Math.max(1, e.target.value))}
+            min="1"
           />
         </div>
 
@@ -132,6 +156,24 @@ function JobPost() {
               Beaucoup d'expérience
             </label>
           </div>
+        </div>
+
+  
+
+        {/* Ajouter une image */}
+        <div className="form-group">
+          <label htmlFor="imageUpload">Ajouter une image :</label>
+          <input
+            type="file"
+            id="imageUpload"
+            accept="image/*"
+            onChange={handleImageChange}
+          />
+          {selectedImage && (
+            <div className="image-preview">
+              <img src={selectedImage} alt="Preview" />
+            </div>
+          )}
         </div>
 
         {/* Bouton de soumission */}
