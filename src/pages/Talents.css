@@ -17,7 +17,7 @@
     align-items: center;
     justify-content: flex-start; /* Pour aligner les éléments au début */
     width: 100%; /* Chaque talent prend toute la largeur disponible */
-    padding: 15px;
+    padding: 25px;
     border: 1px solid #ccc;
     border-radius: 10px;
     background-color: #f9f9f9;
@@ -28,6 +28,7 @@
   .filter-item label {
     font-weight: bold;
     margin-bottom: 0.5rem;
+    margin-right : 15px;
   }
   
   .filter-item input {
@@ -73,7 +74,7 @@
   }
   
   .talent-image {
-    width: 450px;  /* Largeur rectangulaire de l'image */
+    width: 500px;  /* Largeur rectangulaire de l'image */
     height: 300px;  /* Hauteur ajustée pour donner un aspect rectangulaire */
     object-fit: cover; /* Cela permet à l'image de couvrir toute la zone sans déformation */
     border-radius: 8px; /* Bord arrondi pour l'image */

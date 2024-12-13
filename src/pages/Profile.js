@@ -144,7 +144,7 @@ function Profile() {
             onChange={(e) => handleInputChange('curriculum', e.target.value)}
           />
           <textarea
-            placeholder="Expériences : 1. Développeur Frontend chez TechCorp (2019-2021)\n2. Ingénieur Logiciel chez Innovatech (2021-2023)"
+            placeholder="Expériences : 1. Développeur Frontend chez TechCorp (2019-2021). Ingénieur Logiciel chez Innovatech (2021-2023)"
             value={profileData.experiences}
             onChange={(e) => handleInputChange('experiences', e.target.value)}
           />
