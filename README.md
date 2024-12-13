@@ -118,7 +118,7 @@ Président d’une start-up prenant de l’envergure rapidement, recherche un sp
 
 ## Modèle de tâches type
 
-	1. Recherche et sélection de profils (chercheurs de talents)
+1. Recherche et sélection de profils (chercheurs de talents)
  
 Objectif : Permettre aux recruteurs de trouver facilement le profil idéal pour leurs besoins.
 ### Tâches principales 
@@ -141,7 +141,7 @@ Accéder à des statistiques (indicateurs clés comme taux de réussite ou éval
 Ajouter des profils à une liste de favoris ou de comparaisons.
 Contacter le profil ou proposer une mission.
 
-	2. Création d’un portfolio 
+2. Création d’un portfolio 
  
 Objectif : Offrir un espace au sein duquel les chercheurs d’emploi peuvent présenter leurs compétences et expériences de manière attractive.
 
@@ -161,7 +161,7 @@ Ajouter des statistiques comme le nombre de projets réalisés ou les retours cl
 Mettre à jour la disponibilité :
 Indiquer si l’utilisateur est disponible pour de nouvelles missions.
 
-	3. Proposition et gestion de missions (pour tous les utilisateurs)
+3. Proposition et gestion de missions (pour tous les utilisateurs)
  
 Objectif : Simplifier les échanges et collaborations entre recruteurs et chercheurs d’emploi.
 
@@ -183,7 +183,7 @@ Finaliser la mission :
 Noter le travail réalisé.
 Rédiger un commentaire (facultatif).
 
-	4. Navigation et découverte de la plateforme (pour tous les utilisateurs)
+4. Navigation et découverte de la plateforme (pour tous les utilisateurs)
  
 Objectif : Améliorer l’expérience utilisateur pour qu’il trouve facilement ce dont il a besoin.
 
@@ -194,7 +194,7 @@ Utiliser une barre de recherche avec suggestions intelligentes.
 Accéder à des articles ou conseils pour optimiser l’utilisation de la plateforme (par exemple, comment créer un portfolio efficace ou recruter le bon candidat).
 Naviguer entre les profils, missions et portfolios.
 
-	5. Évaluation et feedback (pour recruteurs et chercheurs d’emploi)
+5. Évaluation et feedback (pour recruteurs et chercheurs d’emploi)
  
 Objectif : Instaurer une confiance mutuelle grâce à des retours transparents.
 
@@ -205,7 +205,7 @@ Fournir un feedback écrit pour le portfolio du candidat.
 Pour les chercheurs d’emploi :
 Noter et commenter l’expérience avec un recruteur (clarté des consignes, professionnalisme).
 
-	6. Système de messagerie intégré (pour Christelle, Michael et Mathilde)
+6. Système de messagerie intégré (pour Christelle, Michael et Mathilde)
  
 Objectif : Faciliter la communication entre utilisateurs pour organiser des collaborations.
 
