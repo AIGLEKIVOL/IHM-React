@@ -29,23 +29,22 @@ function Login({ onLogin }) {
   return (
     <div className="login-page">
       <form className="login-form" onSubmit={handleSubmit}>
-        <h2>Login</h2>
         {error && <p className="error">{error}</p>}
         <input
           type="text"
-          placeholder="Username"
+          placeholder="Nom d'utilisateur"
           value={username}
           onChange={(e) => setUsername(e.target.value)}
           required
         />
         <input
           type="password"
-          placeholder="Password"
+          placeholder="Mot de passe"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           required
         />
-        <button type="submit">Login</button>
+        <button type="submit">Connexion</button>
       </form>
     </div>
   );
