@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
 import './Talents.css';
+import webdev from './img/webdev.JPG'; 
+import cyber from './img/cyber.JPG'; 
+import dataAna from './img/dataAna.JPG'; 
+import machine from './img/machine.JPG';
 
 // Données fictives des offres d'emploi
 const jobOffers = [
@@ -9,6 +13,8 @@ const jobOffers = [
     salary: 15,
     duration: 30, // Durée en jours
     tags: ['data analyst', 'machine learning'],
+    image: dataAna,
+
   },
   {
     id: 2,
@@ -16,6 +22,8 @@ const jobOffers = [
     salary: 15,
     duration: 60,
     tags: ['web developer', 'cybersecurity'],
+    image: webdev,
+
   },
   {
     id: 3,
@@ -23,6 +31,8 @@ const jobOffers = [
     salary: 25,
     duration: 45,
     tags: ['cybersecurity'],
+    image: cyber,
+
   },
   {
     id: 4,
@@ -30,6 +40,7 @@ const jobOffers = [
     salary: 20,
     duration: 40,
     tags: ['machine learning', 'data analyst'],
+    image: machine,
   },
 ];
 
@@ -114,17 +125,28 @@ function JobOffers() {
       </div>
     </div>
 
-      <div className="profiles-list">
-        <h3>Offres de mission</h3>
-        {filteredJobs.length > 0 ? (
-          filteredJobs.map((job) => (
-            <div key={job.id} className="profile-card">
-              <h4>{job.title}</h4>
-              <p>Salaire: ${job.salary}/heure</p>
-              <p>Durée estimée: {job.duration} jours</p>
-              <p>Tags: {job.tags.join(', ')}</p>
-              <button onClick={() => handleJobClick(job)}>Contacter l'employeur</button>
-            </div>
+
+    <div className="profiles-list">
+    <h3>Profils</h3>
+    {filteredJobs.length > 0 ? (
+      filteredJobs.map((job) => (
+        <div key={job.id} className="profile-card">
+          {/* Conteneur texte à gauche, maintenant affiché verticalement */}
+          <div className="profile-info">
+          <h4>{job.title}</h4>
+            <p>Salaire: ${job.salary}/heure</p>
+            <p>Durée estimée: {job.duration} jours</p>
+            <p>Tags: {job.tags.join(', ')}</p>
+            <button onClick={() => handleJobClick(job)}>Contacter l'employeur</button>
+          </div>
+
+          {/* Image à droite */}
+          <img src={job.image} className="talent-image" />
+        </div>
+
+
+      
+
           ))
         ) : (
           <p>Aucune offre ne correspond aux critères</p>

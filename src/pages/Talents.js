@@ -1,5 +1,10 @@
 import React, { useState } from 'react';
 import './Talents.css';
+import profileAlice from './img/plaque.jpg'; 
+import profileBob from './img/plaque2.jpg'; 
+import profileCharlie from './img/plaque3.jpg'; 
+import profileDave from './img/plaque4.jpg'; 
+
 
 const profiles = [
   {
@@ -8,6 +13,7 @@ const profiles = [
     hourlyRate: 40,
     projectsDone: 10,
     tags: ['data analyst', 'machine learning'],
+    image: profileAlice,
   },
   {
     id: 2,
@@ -15,6 +21,7 @@ const profiles = [
     hourlyRate: 50,
     projectsDone: 15,
     tags: ['web developer', 'cybersecurity'],
+    image: profileBob
   },
   {
     id: 3,
@@ -22,6 +29,7 @@ const profiles = [
     hourlyRate: 35,
     projectsDone: 8,
     tags: ['data analyst', 'web developer'],
+    image: profileCharlie
   },
   {
     id: 4,
@@ -29,6 +37,7 @@ const profiles = [
     hourlyRate: 60,
     projectsDone: 20,
     tags: ['machine learning', 'cybersecurity'],
+    image: profileDave
   },
 ];
 
@@ -116,22 +125,28 @@ function Talents() {
         </div>
     </div>
 
-      <div className="profiles-list">
-        <h3>Profils</h3>
-        {filteredProfiles.length > 0 ? (
-          filteredProfiles.map((profile) => (
-            <div key={profile.id} className="profile-card">
-              <h4>{profile.name}</h4>
-              <p>Salaire horaire: ${profile.hourlyRate}</p>
-              <p>Projets réalisés: {profile.projectsDone}</p>
-              <p>Tags: {profile.tags.join(', ')}</p>
-              <button onClick={() => handleProfileClick(profile)}>Contacter</button>
-            </div>
-          ))
-        ) : (
-          <p>Aucun profil trouvé</p>
-        )}
+  <div className="profiles-list">
+  <h3>Profils</h3>
+  {filteredProfiles.length > 0 ? (
+    filteredProfiles.map((profile) => (
+      <div key={profile.id} className="profile-card">
+        {/* Conteneur texte à gauche, maintenant affiché verticalement */}
+        <div className="profile-info">
+          <h4>{profile.name}</h4>
+          <div>Salaire horaire: ${profile.hourlyRate}</div>
+          <div>Projets réalisés: {profile.projectsDone}</div>
+          <div>Tags: {profile.tags.join(', ')}</div>
+          <button onClick={() => handleProfileClick(profile)}>Contacter</button>
+        </div>
+
+        {/* Image à droite */}
+        <img src={profile.image} className="talent-image" />
       </div>
+    ))
+  ) : (
+    <p>Aucun profil trouvé</p>
+  )}
+</div>
 
       {/* Modale de contact */}
       {contactModalVisible && (

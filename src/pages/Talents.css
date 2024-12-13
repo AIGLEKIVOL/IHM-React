@@ -14,10 +14,15 @@
   
   .filter-item {
     display: flex;
-    flex-direction: column;
-    margin-right: 1rem;
-    margin-bottom: 1rem;
-    max-width: 200px;
+    align-items: center;
+    justify-content: flex-start; /* Pour aligner les éléments au début */
+    width: 100%; /* Chaque talent prend toute la largeur disponible */
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-sizing: border-box; /* Assurez-vous que les bordures sont incluses dans la largeur */
+    transition: transform 0.3s ease; /* Ajout d'un effet pour le hover */
   }
   
   .filter-item label {
@@ -51,29 +56,52 @@
   }
   .profiles-list {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr); /* Pour une seule colonne */
     gap: 1rem;
   }
+  
   
   .profile-card {
     padding: 1rem;
     border: 1px solid #ddd;
     border-radius: 8px;
+    display: flex; /* Utilisation de flexbox pour aligner l'image et le texte horizontalement */
+    align-items: center; /* Aligner verticalement l'image et le texte */
+    justify-content: space-between; /* Espace entre l'image et le texte */
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
     background-color: white;
   }
+  
+  .talent-image {
+    width: 450px;  /* Largeur rectangulaire de l'image */
+    height: 300px;  /* Hauteur ajustée pour donner un aspect rectangulaire */
+    object-fit: cover; /* Cela permet à l'image de couvrir toute la zone sans déformation */
+    border-radius: 8px; /* Bord arrondi pour l'image */
+    margin-left: 20px;
+  }
+  
+  .profile-info {
+    flex-grow: 1; /* Occupe l'espace restant à gauche */
+    margin-right: 1rem; /* Espace entre le texte et l'image */
+    display: flex;
+    flex-direction: column; /* Affichage des éléments verticalement */
+    align-items: flex-start; /* Alignement du texte à gauche */
+  }
+  
+  .profile-info div {
+    margin-bottom: 8px; /* Espacement entre chaque ligne de texte */
+  }
+  
   
   .profile-card h4 {
     margin-top: 0;
   }
   
-  .profile-card p {
-    margin: 0.5rem 0;
-  }
-  
+
   .profile-card p:last-child {
     margin-bottom: 0;
   }
+
   
   .profile-card button {
     padding: 0.5rem;
