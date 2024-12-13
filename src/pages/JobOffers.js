@@ -93,7 +93,7 @@ function JobOffers() {
             type="number"
             value={salaryFilter}
             onChange={(e) => setSalaryFilter(e.target.value)}
-            placeholder="Max"
+            placeholder="Min"
           />
         </div>
 

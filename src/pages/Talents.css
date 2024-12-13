@@ -73,7 +73,7 @@
   }
   
   .talent-image {
-    width: 450px;  /* Largeur rectangulaire de l'image */
+    width: 500px;  /* Largeur rectangulaire de l'image */
     height: 300px;  /* Hauteur ajustée pour donner un aspect rectangulaire */
     object-fit: cover; /* Cela permet à l'image de couvrir toute la zone sans déformation */
     border-radius: 8px; /* Bord arrondi pour l'image */
