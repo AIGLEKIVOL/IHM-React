@@ -13,6 +13,7 @@ const jobOffers = [
     salary: 15,
     duration: 30, // Durée en jours
     tags: ['data analyst', 'machine learning'],
+    description: "Le Data Analyst aura pour mission d'extraire, de nettoyer et d'analyser les données provenant des ventes pour identifier des tendances, des opportunités et des pistes d'amélioration. Il devra collaborer avec l'équipe marketing pour mesurer l'efficacité des campagnes et produire des rapports visuels à l'aide de Power BI ou Tableau.",
     image: dataAna,
 
   },
@@ -22,6 +23,8 @@ const jobOffers = [
     salary: 15,
     duration: 60,
     tags: ['web developer', 'cybersecurity'],
+    description: "Le développeur web sera chargé de concevoir et de développer une plateforme e-commerce de bout en bout. Cela inclut la création d'une interface utilisateur moderne et responsive, l'intégration d'une base de données pour la gestion des produits et commandes, ainsi que la mise en place d'un système de paiement sécurisé. Le projet nécessitera également des tests approfondis pour garantir des performances optimales et une expérience utilisateur fluide.",
+
     image: webdev,
 
   },
@@ -31,6 +34,7 @@ const jobOffers = [
     salary: 25,
     duration: 45,
     tags: ['cybersecurity'],
+    description:"Le consultant en cybersécurité sera chargé d'effectuer un audit complet de l'infrastructure réseau de l'entreprise pour identifier les failles potentielles et renforcer la sécurité. Il devra analyser les politiques actuelles, effectuer des tests de pénétration, et proposer un plan d'action détaillé pour protéger les données sensibles.",
     image: cyber,
 
   },
@@ -40,6 +44,7 @@ const jobOffers = [
     salary: 20,
     duration: 40,
     tags: ['machine learning', 'data analyst'],
+    description:"L'ingénieur en machine learning sera chargé de concevoir, entraîner et déployer un modèle prédictif capable d'anticiper la demande des clients en fonction des données historiques de ventes. Cela inclut la collecte et la préparation des données, la sélection de modèles adaptés (régression, arbres de décision, réseaux neuronaux) et l'évaluation des performances. Le modèle devra être optimisé pour une utilisation en production.",
     image: machine,
   },
 ];
@@ -136,6 +141,7 @@ function JobOffers() {
           <h4>{job.title}</h4>
             <p>Salaire: ${job.salary}/heure</p>
             <p>Durée estimée: {job.duration} jours</p>
+            <p>Description de la mission : {job.description} </p>
             <p>Tags: {job.tags.join(', ')}</p>
             <button onClick={() => handleJobClick(job)}>Contacter l'employeur</button>
           </div>
