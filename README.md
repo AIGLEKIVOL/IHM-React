@@ -68,12 +68,14 @@ Disposer d’une présentation succincte des projets réalisés.
 Profession : Stagiaire en data analysis, cherche à étoffer son portfolio professionnel. 
 Contexte professionnel : En début de carrière, souhaite se démarquer sur le marché de l’emploi.
 
-	Objectifs : 
+Objectifs : 
+
 Construire un portfolio attrayant à partir de ses projets antérieurs et missions ponctuelles réalisées via la plateforme.
 Gagner en visibilité auprès des employeurs et recruteurs potentiels.
 Développer ses compétences et améliorer son CV en travaillant sur des missions variées.
 
-	Comportements : 
+Comportements :
+
 Motivée par la reconnaissance de ses compétences et son potentiel de progression.
 Cherche à attirer des employeurs en mettant en avant des réalisations concrètes et un profil soigné.
 Encline à partager son profil et son portfolio sur d’autres plateformes professionnelles comme LinkedIn.
@@ -88,22 +90,26 @@ Feedback constructif ou recommandations des recruteurs après les missions.
 Profession : créateur de start-up dans le domaine comptable.
 Contexte professionnel : son entreprise connaît une croissance rapide et reçoit un volume élevé de demandes.
 
-	Objectifs : 
+Objectifs : 
+
 Identifier rapidement des talents expérimentés pour déléguer des tâches tout en maintenant un haut niveau de qualité.
 Accéder à une évaluation fiable des compétences des candidats grâce à leurs projets précédents.
 Faciliter le processus de recrutement pour éviter des délais inutiles.
 
-	Comportements : 
+Comportements : 
+
 Fortement orienté vers la qualité des projets réalisés. 
 Prêt à payer davantage pour des profils de qualité supérieure avec un gage de fiabilité.
 Cherche à établir des collaborations à long terme avec des talents éprouvés.
 
-	Besoins fonctionnels : 
+Besoins fonctionnels : 
+
 Une recherche avancée pour filtrer les candidats selon : expérience, type de projet réalisés, tarifs et disponibilité. 
 Accès à un portfolio détaillé avec des liens directs vers les projets pour évaluer leur qualité.
 Fonctionnalités permettant de sauvegarder ou comparer plusieurs profils.
 
-	Synthèse des besoins utilisateurs : 
+## Synthèse des besoins utilisateurs : 
+
 Navigation simplifiée : Catégories claires pour trouver rapidement ce que l’on cherche.
 Mise en avant des indicateurs clés : Expérience, taux de réussite, tarifs. 
 Portfolios interactifs : Accès aux projets réalisés avec descriptions et liens directs.
@@ -117,7 +123,7 @@ Président d’une start-up prenant de l’envergure rapidement, recherche un sp
 
 ## Modèle de tâches type
 
-	1. Recherche et sélection de profils (chercheurs de talents)
+### 1. Recherche et sélection de profils (chercheurs de talents)
 Objectif : Permettre aux recruteurs de trouver facilement le profil idéal pour leurs besoins.
 Tâches principales :
 Accéder à une page de recherche avec filtres :
@@ -135,7 +141,7 @@ Accéder à des statistiques (indicateurs clés comme taux de réussite, évalua
 Ajouter des profils à une liste de favoris ou de comparaisons.
 Contacter le profil ou proposer une mission.
 
-	2. Création d’un portfolio 
+### 2. Création d’un portfolio 
 Objectif : Offrir un espace où les chercheurs d’emploi peuvent présenter leurs compétences et expériences de manière attractive.
 Tâches principales :
 Créer un compte et compléter un profil :
@@ -149,7 +155,7 @@ Ajouter des statistiques comme le nombre de projets réalisés ou les retours cl
 Mettre à jour la disponibilité :
 Indiquer si l’utilisateur est disponible pour de nouvelles missions.
 
-	3. Proposition et gestion de missions (pour tous les utilisateurs)
+### 3. Proposition et gestion de missions (pour tous les utilisateurs)
 Objectif : Simplifier les échanges et collaborations entre recruteurs et chercheurs d’emploi.
 Tâches principales :
 Proposer une mission :
@@ -165,7 +171,7 @@ Finaliser la mission :
 Noter le travail réalisé.
 Rédiger un commentaire (facultatif).
 
-	4. Navigation et découverte de la plateforme (pour tous les utilisateurs)
+### 4. Navigation et découverte de la plateforme (pour tous les utilisateurs)
 Objectif : Améliorer l’expérience utilisateur pour qu’il trouve facilement ce dont il a besoin.
 Tâches principales :
 Parcourir les catégories et découvrir les fonctionnalités principales.
@@ -173,7 +179,7 @@ Utiliser une barre de recherche avec suggestions intelligentes.
 Accéder à des articles ou conseils pour optimiser l’utilisation de la plateforme (par exemple, comment créer un portfolio efficace ou recruter le bon candidat).
 Naviguer entre les profils, missions et portfolios.
 
-	5. Évaluation et feedback (pour recruteurs et chercheurs d’emploi)
+### 5.  Évaluation et feedback (pour recruteurs et chercheurs d’emploi)
 Objectif : Instaurer une confiance mutuelle grâce à des retours transparents.
 Tâches principales :
 Pour les recruteurs :
@@ -182,7 +188,7 @@ Fournir un feedback écrit pour le portfolio du candidat.
 Pour les chercheurs d’emploi :
 Noter et commenter l’expérience avec un recruteur (clarté des consignes, professionnalisme).
 
-	6. Système de messagerie intégré (pour Christelle, Michael et Mathilde)
+### 6. Système de messagerie intégré (pour Christelle, Michael et Mathilde)
 Objectif : Faciliter la communication entre utilisateurs pour organiser des collaborations.
 Tâches principales :
 Envoyer et recevoir des messages.
